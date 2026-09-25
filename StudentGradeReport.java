@@ -30,11 +30,16 @@ public class StudentGradeReport {
         String[] subjects = {"Java", "Math", "Physics", "English"};
         int[] marks = new int[4];
 
-        for (int i = 0; i < subjects.length; i++){
-            System.out.println(subjects[i] + ": ");
-            marks[i] = input.nextInt();
-        }
+        for (int i = 0; i < subjects.length; i++) {
+        System.out.print(subjects[i] + ": ");
+        marks[i] = input.nextInt();
 
+        while (marks[i] < 0 || marks[i] > 100) {
+        System.out.println("Invalid input! Enter a mark between 0 and 100.");
+        System.out.print(subjects[i] + ": ");
+        marks[i] = input.nextInt();
+    }
+}
         int total = 0;
 
         for(int m = 0; m < marks.length; m++){
