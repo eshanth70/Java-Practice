@@ -1,4 +1,4 @@
-import java.util.Scanner;
+   import java.util.Scanner;
 
 class student{
     String name;
@@ -56,8 +56,8 @@ class student{
 
 }
 
-public class studentReport {
-
+public class StudentDemo 
+{
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -84,3 +84,4 @@ public class studentReport {
         input.close();
     }
 }
+    
